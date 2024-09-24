@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    border: 5px solid rgb(255, 0, 111);
+    padding: 20px;
+    background-color: wheat;
+}
+
+.logo a{
+    text-decoration: none;
+    color: chocolate;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.menu{
+    display: flex;
+    list-style: none;
+}
+
+.menu li{
+    margin-left: 10px;
+}
+
+.menu li a{
+    text-decoration: none;
+    color: crimson;
+}
+
+.banner{
+    background-color: darkgrey;
+    color: black;
+    height: 400px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-info{
+    text-align: center;
+    background-color: wheat;
+}
+
+.banner-info img{
+    margin-top: 20px;
+    width: 300px;
+    border-radius: 100%;
+}
+
+main{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    text-align: center;
+}
+
+.aboutme-bottom{
+    background-color: brown;
+}
+
+.Experience{
+    background-color: burlywood;
+}
+
+.Performance{
+    background-color: cadetblue;
+}
+
+main div{
+    padding: 30px;
+}
+
+main div p{
+    margin-top: 20px;
+}
+
+
+/* footer{ */
+    background-color:blueviolet ;
+    color: green;
+    padding: 30px;
+    text-align: center;
+}
