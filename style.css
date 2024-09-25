@@ -79,10 +79,90 @@ main div p{
     margin-top: 20px;
 }
 
-
-/* footer{ */
-    background-color:blueviolet ;
-    color: green;
-    padding: 30px;
-    text-align: center;
+.aboutme{
+    background-color: bisque;
 }
+
+.aboutme-text{
+    background-color: rgb(166, 243, 164);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+   
+}
+    & .box-textaboutme {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80px;
+        background-color: rgb(187, 96, 21);
+        margin: 10px;
+        border: 10 solid green;
+        padding: 20px;
+        border-radius: 20px;
+        font-size: 20px;
+    }
+
+    .box-aboutme-info{
+        margin: 10px;
+        display: flex;
+        grid-template-columns: 1fr 1fr;
+        justify-content: space-evenly;
+    }
+
+    .info-box{
+        display: flex;
+    }
+
+   & .information{
+        display: grid;
+    }
+    &&.info-text{
+        border: 50px;
+        padding: 150px;
+        font-size: larger;
+        text-align: left; 
+    }
+
+    .info-logo{
+        display: flex ;
+        margin-top: 20px;
+        width: 50px;
+        height: 50px;
+    }
+
+    .image-info{
+        display: grid;
+        grid-row: auto;
+        grid-template-rows: 1fr 1fr;
+        width: 100px;
+        height: 100px;
+        border-radius: 100%;
+    }
+
+    .exper{
+        background-color: aqua;
+    }
+
+    & .ex-text{
+        display: grid;
+        grid-row: 1fr 1fr;
+        background-color: rgb(121, 127, 232);
+    }
+
+    .box-ex{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80px;
+        background-color: rgb(36, 77, 203);
+        margin: 10px;
+        border: 10 solid green;
+        padding: 20px;
+        border-radius: 20px;
+        font-size: 20px;
+    }
+
+
+
