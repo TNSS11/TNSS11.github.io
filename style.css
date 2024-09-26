@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 nav {
@@ -46,29 +47,44 @@ nav {
     text-align: center;
     background-color: wheat;
 }
+.img-pf{
+    height: 300px;
+    width: 300px;
+}
 
 .banner-info img{
     margin-top: 20px;
-    width: 300px;
     border-radius: 100%;
 }
 
 main{
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     text-align: center;
 }
 
 .aboutme-bottom{
-    background-color: brown;
+    background-color: rgb(206, 70, 70);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: larger;
 }
 
 .Experience{
     background-color: burlywood;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: larger;
 }
 
 .Performance{
     background-color: cadetblue;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: larger;
+}
+
+.API{
+    background-color: rgb(15, 149, 138);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: larger;
 }
 
 main div{
@@ -102,6 +118,7 @@ main div p{
         padding: 20px;
         border-radius: 20px;
         font-size: 20px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
 
     .box-aboutme-info{
@@ -113,6 +130,7 @@ main div p{
 
     .info-box{
         display: flex;
+        margin-bottom: 20px;
     }
 
    & .information{
@@ -121,34 +139,46 @@ main div p{
     &&.info-text{
         border: 50px;
         padding: 150px;
-        font-size: larger;
+        font-size: 10px;
         text-align: left; 
     }
 
     .info-logo{
         display: flex ;
         margin-top: 20px;
-        width: 50px;
-        height: 50px;
+    }
+    && .img-w{
+        margin-inline: 10px;
+        height: 75px;
+        width: 75px;
+        border-radius: 20px
     }
 
     .image-info{
         display: grid;
         grid-row: auto;
         grid-template-rows: 1fr 1fr;
-        width: 100px;
-        height: 100px;
+    }
+    & .img-info{
+        width: 110px;
+        height: 110px;
         border-radius: 100%;
     }
 
     .exper{
-        background-color: aqua;
+        height: auto;
+        background-color: rgb(186, 219, 77);
+        display: flex;
+        flex-direction: column;
     }
 
     & .ex-text{
-        display: grid;
-        grid-row: 1fr 1fr;
-        background-color: rgb(121, 127, 232);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        background-color: rgb(136, 175, 50);
     }
 
     .box-ex{
@@ -156,13 +186,90 @@ main div p{
         justify-content: center;
         align-items: center;
         height: 80px;
-        background-color: rgb(36, 77, 203);
+        background-color: rgb(87, 111, 26);
         margin: 10px;
-        border: 10 solid green;
         padding: 20px;
         border-radius: 20px;
         font-size: 20px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
+    & .box-pic-exp{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
+    }
+        & .pic-exp{
+            width: 100px;
+            height: 100px;
+            border-radius: 20px;
+            margin-block: 10px;
+            margin-inline: 10px;
+        }
 
+        .perf{
+            background-color: rgb(100, 104, 227);
+        }
+        
+        .per-text{
+            background-color: rgb(80, 118, 185);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 10px;
+           
+        }
+            & .box-per {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 80px;
+                background-color: rgb(30, 88, 149);
+                margin: 10px;
+                padding: 20px;
+                border-radius: 20px;
+                font-size: 20px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+            }
+
+            .box-pic-per{
+                display: flex;
+                flex-direction: 1fr 1fr;
+                background-color: rgb(61, 105, 175);
+                justify-content: center;
+            }
+
+            .pic-per{
+                width: 150px;
+                height: 150px;
+                border-radius: 30px;
+                margin-block: 10px;
+                margin-inline: 10px;
+            }
+
+            .apii{
+                background-color: rgb(19, 177, 103);
+            }
+            
+            .api-text{
+                background-color: rgb(18, 163, 125);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-top: 10px;
+               
+            }
+                & .box-api {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 80px;
+                    background-color: rgb(10, 138, 112);
+                    margin: 10px;
+                    padding: 20px;
+                    border-radius: 20px;
+                    font-size: 20px;
+                    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+                }
+    
 
 
