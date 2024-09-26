@@ -96,11 +96,11 @@ main div p{
 }
 
 .aboutme{
-    background-color: bisque;
+    background-color: rgb(214, 56, 112);
 }
 
 .aboutme-text{
-    background-color: rgb(166, 243, 164);
+    background-color: rgb(199, 54, 102);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -112,9 +112,9 @@ main div p{
         justify-content: center;
         align-items: center;
         height: 80px;
-        background-color: rgb(187, 96, 21);
+        background-color: rgb(212, 25, 69);
         margin: 10px;
-        border: 10 solid green;
+        border: 10 solid rgb(226, 60, 113);
         padding: 20px;
         border-radius: 20px;
         font-size: 20px;
