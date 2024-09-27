@@ -158,10 +158,10 @@
                     </div>
                     <div class="api-post-box-id">
                         <p class="text-titlebox">ID : </p>
-                        <input class="box-input-text" type="text" id="studentID" required placeholder="Enter Student ID">
+                        <input class="box-input-text" type="text" id="studentId" required placeholder="Enter Student ID">
                     </div>
                     <div class="api-post-box-sent">
-                        <input class="api-post-box-sent-submit" type="submit">
+                        <input class="box-sent-submit" type="submit">
                     </div>
                 </form>
 
@@ -174,4 +174,38 @@
         <div class="box-foot"><h2>Copyright@2024 by Sahachai20082</h2></div>
     </div>
 </footer>
+
+<script>
+    async function submitData() {
+        // รับข้อมูลจากฟอร์ม
+        const studentId = document.getElementById("studentId").value;
+        const studentName = document.getElementById("studentName").value;
+
+        // สร้างข้อมูลในรูปแบบ JSON
+        const data = {
+            id: studentId,
+            name: studentName
+        };
+
+        // ส่งข้อมูลไปยัง API โดยใช้ fetch
+        try {
+            const response = await fetch("https://206.189.146.138/api/students", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(data)
+            });
+
+            if (response.ok) {
+                alert("ส่งสักทีนะ");
+            } else {
+                alert("ส่งไม่ได้นะจ้ะ");
+            }
+        } catch (error) {
+            console.error("Error:", error);
+            alert("ส่งไม่ได้นะจ้ะ");
+        }
+    }
+</script>
 </html>
